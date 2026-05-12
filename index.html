@@ -1,32 +1,222 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css" href="index.js"/>
-    <title>Oh My Gosh!</title>
-
+    <title>Oh My Gosh! Café</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">  <!-- link de navegação  --> 
+    <header class="cabecalho">
+        <nav class="barra-navegacao container">
             <div class="logo">
-                <span>Oh My Gosh!</span>  <!-- seção em um documento  --> 
+                <i class="fas fa-coffee"></i>
+                <span>Oh My Gosh! Café</span>
             </div>
-            <ul class="nav-menu"> <!-- lista não ordenada  -->
-                <li><a href="#home">Home</a></li>         <!-- um item da lista  -->
-                <li><a href="#menu">Cardápio</a></li>
-                <li><a href="#gallery">Galeria</a></li>
-                <li><a href="#location">Localização</a></li>
+            <ul class="lista-navegacao">
+                <li><a href="#inicio">Home</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#localizacao">Localização</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section class="hero" id="home">   <!-- Hero Section (primeiro bloco visivel do site)-->
-        <div class="hero-content">
-            <h1></h1>
 
+    <section id="inicio" class="destaque">
+        <div class="conteudo-destaque">
+            <h1>Café Turquesa</h1>
+            <p>O melhor café da cidade em um ambiente acolhedor</p>
+            <div class="botoes-destaque">
+                <a href="#cardapio" class="btn-principal">Ver Cardápio</a>
+                <a href="#localizacao" class="btn-secundario">Pedir Delivery</a>
+            </div>
         </div>
     </section>
+
+    <section id="cardapio" class="secao-cardapio">
+        <div class="container">
+            <h1 class="titulo-principal">Nosso Cardápio</h1>
+            <div class="divisor"></div>
+
+            <input type="radio" name="p" id="gel-1" checked> <input type="radio" name="p" id="gel-2">
+            <input type="radio" name="p" id="gel-3"> <input type="radio" name="p" id="gel-4">
+            <input type="radio" name="p" id="que-1"> <input type="radio" name="p" id="que-2">
+            <input type="radio" name="p" id="que-3"> <input type="radio" name="p" id="que-4">
+            <input type="radio" name="p" id="bol-1"> <input type="radio" name="p" id="bol-2">
+            <input type="radio" name="p" id="bol-3">
+            <input type="radio" name="p" id="bom-1"> <input type="radio" name="p" id="bom-2">
+            <input type="radio" name="p" id="bro-1"> <input type="radio" name="p" id="bro-2">
+            <input type="radio" name="p" id="bro-3"> <input type="radio" name="p" id="bro-4">
+            <input type="radio" name="p" id="tor-1"> <input type="radio" name="p" id="tor-2">
+            <input type="radio" name="p" id="sal-1"> <input type="radio" name="p" id="sal-2">
+            <input type="radio" name="p" id="sal-3">
+
+            <div class="wrapper-conteudo">
+                <div class="secao-imagem">
+                    <div class="setas-navegacao">
+                        <label for="gel-4" class="seta anterior s-gel-1">❮</label><label for="gel-2" class="seta proxima s-gel-1">❯</label>
+                        <label for="gel-1" class="seta anterior s-gel-2">❮</label><label for="gel-3" class="seta proxima s-gel-2">❯</label>
+                        <label for="gel-2" class="seta anterior s-gel-3">❮</label><label for="gel-4" class="seta proxima s-gel-3">❯</label>
+                        <label for="gel-3" class="seta anterior s-gel-4">❮</label><label for="gel-1" class="seta proxima s-gel-4">❯</label>
+                        <label for="que-4" class="seta anterior s-que-1">❮</label><label for="que-2" class="seta proxima s-que-1">❯</label>
+                        <label for="que-1" class="seta anterior s-que-2">❮</label><label for="que-3" class="seta proxima s-que-2">❯</label>
+                        <label for="que-2" class="seta anterior s-que-3">❮</label><label for="que-4" class="seta proxima s-que-3">❯</label>
+                        <label for="que-3" class="seta anterior s-que-4">❮</label><label for="que-1" class="seta proxima s-que-4">❯</label>
+                        <label for="bol-3" class="seta anterior s-bol-1">❮</label><label for="bol-2" class="seta proxima s-bol-1">❯</label>
+                        <label for="bol-1" class="seta anterior s-bol-2">❮</label><label for="bol-3" class="seta proxima s-bol-2">❯</label>
+                        <label for="bol-2" class="seta anterior s-bol-3">❮</label><label for="bol-1" class="seta proxima s-bol-3">❯</label>
+                        <label for="bom-2" class="seta anterior s-bom-1">❮</label><label for="bom-2" class="seta proxima s-bom-1">❯</label>
+                        <label for="bom-1" class="seta anterior s-bom-2">❮</label><label for="bom-1" class="seta proxima s-bom-2">❯</label>
+                        <label for="bro-4" class="seta anterior s-bro-1">❮</label><label for="bro-2" class="seta proxima s-bro-1">❯</label>
+                        <label for="bro-1" class="seta anterior s-bro-2">❮</label><label for="bro-3" class="seta proxima s-bro-2">❯</label>
+                        <label for="bro-2" class="seta anterior s-bro-3">❮</label><label for="bro-4" class="seta proxima s-bro-3">❯</label>
+                        <label for="bro-3" class="seta anterior s-bro-4">❮</label><label for="bro-1" class="seta proxima s-bro-4">❯</label>
+                        <label for="tor-2" class="seta anterior s-tor-1">❮</label><label for="tor-2" class="seta proxima s-tor-1">❯</label>
+                        <label for="tor-1" class="seta anterior s-tor-2">❮</label><label for="tor-1" class="seta proxima s-tor-2">❯</label>
+                        <label for="sal-3" class="seta anterior s-sal-1">❮</label><label for="sal-2" class="seta proxima s-sal-1">❯</label>
+                        <label for="sal-1" class="seta anterior s-sal-2">❮</label><label for="sal-3" class="seta proxima s-sal-2">❯</label>
+                        <label for="sal-2" class="seta anterior s-sal-3">❮</label><label for="sal-1" class="seta proxima s-sal-3">❯</label>
+                    </div>
+
+                    <div class="circulo-moldura">
+                        <img src="imagens/cardapio/bebidas geladas/iced_latte.jpg" class="img-produto" id="img-gel-1">
+                        <img src="imagens/cardapio/bebidas geladas/smoothies.jpg" class="img-produto" id="img-gel-2">
+                        <img src="imagens/cardapio/bebidas geladas/cap_gelado.jpg" class="img-produto" id="img-gel-3">
+                        <img src="imagens/cardapio/bebidas geladas/frappes.jpg" class="img-produto" id="img-gel-4">
+                        <img src="imagens/cardapio/bebidas quentes/big_latte.jpg" class="img-produto" id="img-que-1">
+                        <img src="imagens/cardapio/bebidas quentes/cap_italiano.jpg" class="img-produto" id="img-que-2">
+                        <img src="imagens/cardapio/bebidas quentes/cap_especial.jpg" class="img-produto" id="img-que-3">
+                        <img src="imagens/cardapio/bebidas quentes/chocolate_quente.jpg" class="img-produto" id="img-que-4">
+                        <img src="imagens/cardapio/bolo no pote/caramelo.jpg" class="img-produto" id="img-bol-1">
+                        <img src="imagens/cardapio/bolo no pote/cenoura.jpg" class="img-produto" id="img-bol-2">
+                        <img src="imagens/cardapio/bolo no pote/dois_amores.jpg" class="img-produto" id="img-bol-3">
+                        <img src="imagens/cardapio/bombom no pote/dois_amores.jpg" class="img-produto" id="img-bom-1">
+                        <img src="imagens/cardapio/bombom no pote/musse_maracuja.jpg" class="img-produto" id="img-bom-2">
+                        <img src="imagens/cardapio/brownies/ferrero.jpg" class="img-produto" id="img-bro-1">
+                        <img src="imagens/cardapio/brownies/ninho.jpg" class="img-produto" id="img-bro-2">
+                        <img src="imagens/cardapio/brownies/recheado.jpg" class="img-produto" id="img-bro-3">
+                        <img src="imagens/cardapio/brownies/sensaçao.jpg" class="img-produto" id="img-bro-4">
+                        <img src="imagens/cardapio/tortas/torta_limao.jpg" class="img-produto" id="img-tor-1">
+                        <img src="imagens/cardapio/tortas/torta_banoffe.jpg" class="img-produto" id="img-tor-2">
+                        <img src="imagens/cardapio/salgados/empanada.jpg" class="img-produto" id="img-sal-1">
+                        <img src="imagens/cardapio/salgados/tostex_misto.jpg" class="img-produto" id="img-sal-2">
+                        <img src="imagens/cardapio/salgados/tostex_queijo.jpg" class="img-produto" id="img-sal-3">
+                    </div>
+                </div>
+
+                <div class="secao-informacoes">
+                    <div class="categorias-nav">
+                        <label for="gel-1" class="etiqueta b-gel">Bebidas Geladas </label>
+                        <label for="que-1" class="etiqueta b-que">Bebidas Quentes </label>
+                        <label for="bol-1" class="etiqueta b-bol">Bolo no Pote </label>
+                        <label for="bom-1" class="etiqueta b-bom">Bombom no Pote </label>
+                        <label for="bro-1" class="etiqueta b-bro">Brownies </label>
+                        <label for="tor-1" class="etiqueta b-tor">Tortas </label>
+                        <label for="sal-1" class="etiqueta b-sal">Salgados </label>
+                    </div>
+
+                    <div class="texto-produto" id="txt-gel-1"><h2>Iced Latte</h2><p>Um shot de café espresso, leite e gelo (baunilha opcional). Simples e delicioso! (400ml).</p></div>
+                    <div class="texto-produto" id="txt-gel-2"><h2>Smoothies</h2><p>Beeem gelado e saboroso, nosso smoothhie é perfeito para aqueles dias em que Curitiba entra no modo verão (500ml).</p></div>
+                    <div class="texto-produto" id="txt-gel-3"><h2>Cappuccino Gelado</h2><p>Delicioso blend do nosso cappuccino especial, calda de chocolate meio amargo, leite, cubos de gelo, chantilly e canela em pó... Essa bebida tem o incrível poder de melhorar o seu dia!</p></div>
+                    <div class="texto-produto" id="txt-gel-4"><h2>Frappes</h2><p>Bebida cremosinhha, bem gelada e deliciosa! perfeita para uma pausa no meio do dia. Ele leva café expresso (opcional), leite, chantilly e o ingrediente do sabor escolhido (500ml).</p></div>
+
+                    <div class="texto-produto" id="txt-que-1"><h2>Big Latte</h2><p>Uma dose dupla de café espresso (Orfeu) e leite vaporizado cremosinho. 500ml de café com leite para você se esbaldar!.</p></div>
+                    <div class="texto-produto" id="txt-que-2"><h2>Cappuccino Italiano</h2><p>Espresso com leite vaporizado e espuma cremosa, polvilhado com canela (270ml).</p></div>
+                    <div class="texto-produto" id="txt-que-3"><h2>Cappuccino Especial</h2><p>Sua composição leva calda de chocolate gourmet meio amargo, uma mistura deliciosa do nosso cappuccino especial, leite vaporizado, uma pitadinha de canela em pó e chantilly em um potinho enviado separadamente (opcional) (270ml).</p></div>
+                    <div class="texto-produto" id="txt-que-4"><h2>Chocolate Quente Europeu</h2><p>Esse chocolate quente é muito consumido no friozinho europeu. Sua composição leva um blend especial de chocolate em pó, leite vaporizado bem cremoso e chantilly em um potinho enviado separadamente (opcional) (270ml).</p></div>
+
+                    <div class="texto-produto" id="txt-bol-1"><h2>Bolo de Pote: Brigadeiro e Caramelo Salgado</h2><p>Feito com camadas de bolo de chocolate super macio, brigadeiro cremoso artesanal e um toque surpreendente de caramelo salgado (220ml).</p></div>
+                    <div class="texto-produto" id="txt-bol-2"><h2>Bolo de Pote: Cenoura com Brigadeiro</h2><p>A combinação perfeita de um bolo de cenoura fofinho com brigadeiro cremoso dentro de um potinho! (200ml).</p></div>
+                    <div class="texto-produto" id="txt-bol-3"><h2>Bolo de Pote: Brigadeiro Dois Amores</h2><p>Saboreie a felicidade em cada camada com o nosso Bolo de Pote de Dois Amores. É uma explosão de brigadeiros preto e branco em cada colherada (220ml).</p></div>
+
+                    <div class="texto-produto" id="txt-bom-1"><h2>Bombom de Pote: Dois Amores com Uva</h2><p>Brigadeiro preto 50% cacau com brigadeiro branco bem cremosinho e uas verdes sem semente! (120ml).</p></div>
+                    <div class="texto-produto" id="txt-bom-2"><h2>Bombom de Pote: Mousse de Maracujá com Creme de Alpino</h2><p>A combinação perfeita do azedinhho do maracujá com o sabor marcante do chocolate Alpino! (120ml).</p></div>
+
+                    <div class="texto-produto" id="txt-bro-1"><h2>Brownie: Ferreiro</h2><p>Com avelãs e chocolate.</p></div>
+                    <div class="texto-produto" id="txt-bro-2"><h2>Brownie: Ninho</h2><p>Recheio generoso de leite Ninho.</p></div>
+                    <div class="texto-produto" id="txt-bro-3"><h2>Brownie: Recheado</h2><p>O clássico bem molhadinho.</p></div>
+                    <div class="texto-produto" id="txt-bro-4"><h2>Brownie: Sensação</h2><p>Chocolate com morango.</p></div>
+
+                    <div class="texto-produto" id="txt-tor-1"><h2>Torta de Limão</h2><p>Cremosa e refrescante.</p></div>
+                    <div class="texto-produto" id="txt-tor-2"><h2>Banoffee</h2><p>Banana, doce de leite e chantilly.</p></div>
+
+                    <div class="texto-produto" id="txt-sal-1"><h2>Empanada</h2><p>Massa crocante e bem recheada.</p></div>
+                    <div class="texto-produto" id="txt-sal-2"><h2>Tostex Misto</h2><p>Presunto e queijo derretido.</p></div>
+                    <div class="texto-produto" id="txt-sal-3"><h2>Queijo Quente</h2><p>Mix de queijos especiais.</p></div>
+                    
+                    <div class="preco-global">R$ 17,99</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao-info">
+        <div class="container">
+            <div class="grade-info">
+                <div class="cartao-info">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horário de Funcionamento</h3>
+                    <p>Seg-Sex: 7h às 22h<br>Sáb-Dom: 8h às 23h</p>
+                </div>
+                <div class="cartao-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Delivery</h3>
+                    <p>Entrega em até 45 minutos!<br>
+                        <a href="https://wa.me/5511999999999" class="link-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir pelo WhatsApp
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="secao-galeria">
+        <div class="container">
+            <h2 class="titulo-principal">Galeria</h2>
+            <div class="grade-galeria">
+                <div class="item-galeria">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop" alt="Café">
+                    <div class="overlay-galeria"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="item-galeria">
+                    <img src="https://images.unsplash.com/photo-1512568400610-42b9a812f899?w=400&h=300&fit=crop" alt="Doces">
+                    <div class="overlay-galeria"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="item-galeria">
+                    <img src="https://images.unsplash.com/photo-1516684888876-6c8e0ebca45e?w=400&h=300&fit=crop" alt="Ambiente">
+                    <div class="overlay-galeria"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="item-galeria">
+                    <img src="https://images.unsplash.com/photo-1577968897966-f97b7099b2cd?w=400&h=300&fit=crop" alt="Café gelado">
+                    <div class="overlay-galeria"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="localizacao" class="secao-localizacao">
+        <div class="container">
+            <h2 class="titulo-principal">Onde Estamos</h2>
+            <div class="conteudo-localizacao">
+                <div class="info-localizacao">
+                    <h3>Rua das Flores, 123<br>Centro - São Paulo, SP</h3>
+                    <p>34; Estacionamento próprio<br>♿ Acesso para cadeirantes<br>📱 (11) 99999-9999</p>
+                </div>
+                <div class="container-mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.123456789!2d-46.652123456789!3d-23.56123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd79fd99249e977d5!2sS%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1690000000000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>© 2024 Café Turquesa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
