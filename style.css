@@ -85,7 +85,7 @@ body {
     overflow: hidden;
     background: 
         linear-gradient(to bottom, rgba(0,0,0,0.1) 60%, rgb(0, 0, 0) 100%), 
-        url(''); 
+        url('imagens/grao.png'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -162,7 +162,7 @@ input[type="radio"] { display: none; }
 .wrapper-conteudo {
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 120px;
     min-height: 450px;
     justify-content: center;
 }
@@ -170,8 +170,8 @@ input[type="radio"] { display: none; }
 .secao-imagem { position: relative; }
 
 .circulo-moldura {
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
     border: 5px solid var(--turquesa);
     overflow: hidden;
@@ -210,10 +210,10 @@ input[type="radio"] { display: none; }
 
 .categorias-nav { 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap; 
     gap: 8px; 
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
 
 .etiqueta {
@@ -221,13 +221,14 @@ input[type="radio"] { display: none; }
     border: 1px solid var(--turquesa);
     border-radius: 20px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 16px;
     transition: 0.3s;
 }
 
 .texto-produto { display: none !important; }
 
-.preco-global { 
+.preco-produto { 
+    display: block;
     font-size: 2.2rem; 
     font-weight: bold; 
     color: var(--turquesa); 
@@ -289,28 +290,21 @@ input[type="radio"] { display: none; }
 
 /* Info Section */
 .secao-info { 
-    padding: 60px 0; 
+    padding: 25px 0; 
     background: var(--turquesa); 
 }
 
 .grade-info { 
     display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    gap: 4rem; 
+    gap: 4rem;
 }
 
-.cartao-info { text-align: center; }
-
-.cartao-info i { 
-    font-size: 3rem; 
-    color: var(--fundo-leve); 
-    margin-bottom: 1rem; 
+.cartao-info { 
+    text-align: center; 
 }
 
-.link-whatsapp { 
-    color: var(--fundo-leve); 
-    text-decoration: none; 
-    font-weight: bold; 
+.cartao-info img{
+    width: 80px;
 }
 
 /* Seções Gerais & Galeria */
