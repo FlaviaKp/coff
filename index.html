@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oh My Gosh! Café</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Oh My Gosh! - Cafeteria Moderna</title>
+    <!-- Google Fonts e Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <nav class="barra-navegacao container">
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar container">
             <div class="logo">
-                <i class="fas fa-coffee"></i>
-                <span>Oh My Gosh! Café</span>
+                <i class="fas fa-coffee" style="margin-right: 10px;"></i>
+                <span>Oh my gosh!</span>
             </div>
-            <ul class="lista-navegacao">
-                <li><a href="#inicio">Home</a></li>
-                <li><a href="#cardapio">Cardápio</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#localizacao">Localização</a></li>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Cardápio</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#location">Localização</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="inicio" class="destaque">
-        <div class="conteudo-destaque">
-            <h1>Café Turquesa</h1>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Oh my gosh!</h1>
             <p>O melhor café da cidade em um ambiente acolhedor</p>
-            <div class="botoes-destaque">
-                <a href="#cardapio" class="btn-principal">Ver Cardápio</a>
-                <a href="#localizacao" class="btn-secundario">Pedir Delivery</a>
+            <div class="hero-buttons">
+                <a href="#gallery" class="btn-primary">Ver Galeria</a>
+                <a href="#location" class="btn-secondary">Localização</a>
             </div>
         </div>
     </section>
@@ -172,51 +176,59 @@
             </div>
         </div>
     </section>
-
-    <section id="galeria" class="secao-galeria">
+        <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
         <div class="container">
-            <h2 class="titulo-principal">Galeria</h2>
-            <div class="grade-galeria">
-                <div class="item-galeria">
-                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop" alt="Café">
-                    <div class="overlay-galeria"><i class="fas fa-search-plus"></i></div>
+            <h2 class="section-title">Galeria</h2>
+            <div class="products-grid">
+                <div class="product-card gallery-item">
+                    <img src="imagens/amendoin.png" alt="Café">
                 </div>
-                <div class="item-galeria">
-                    <img src="https://images.unsplash.com/photo-1512568400610-42b9a812f899?w=400&h=300&fit=crop" alt="Doces">
-                    <div class="overlay-galeria"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="item-galeria">
-                    <img src="https://images.unsplash.com/photo-1516684888876-6c8e0ebca45e?w=400&h=300&fit=crop" alt="Ambiente">
-                    <div class="overlay-galeria"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="item-galeria">
-                    <img src="https://images.unsplash.com/photo-1577968897966-f97b7099b2cd?w=400&h=300&fit=crop" alt="Café gelado">
-                    <div class="overlay-galeria"><i class="fas fa-search-plus"></i></div>
+                <div class="product-card gallery-item">
+                     <img src="imagens/capa.png" alt="Espaço">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="localizacao" class="secao-localizacao">
+    <!-- Location Section -->
+    <section id="location" class="location-section">
         <div class="container">
-            <h2 class="titulo-principal">Onde Estamos</h2>
-            <div class="conteudo-localizacao">
-                <div class="info-localizacao">
-                    <h3>Rua das Flores, 123<br>Centro - São Paulo, SP</h3>
-                    <p>34; Estacionamento próprio<br>♿ Acesso para cadeirantes<br>📱 (11) 99999-9999</p>
+            <h2 class="section-title">Onde Nos Encontrar!</h2>
+            <div class="unidades-wrapper">
+                <!-- Unidade Batel -->
+                <div class="location-content">
+                    <div class="location-info">
+                        <h3>BATEL</h3>
+                        <p>Avenida Vicente Machado, 878<br>Batel - Curitiba, PR</p>
+                        <p>🅿️ Estacionamento próprio<br>♿ Acesso para cadeirantes<br>📱(41)99222-1702</p>
+                    </div>
+                    <div class="map-container">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.055205087582!2d-49.28786078831892!3d-25.436417833053415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce38abfa92ecf%3A0xb755c79257e9a8a8!2sAv.%20Vicente%20Machado%2C%20878%20-%20Centro%2C%20Curitiba%20-%20PR%2C%2080420-011!5e0!3m2!1spt-BR!2sbr!4v1778619993374!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
-                <div class="container-mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.123456789!2d-46.652123456789!3d-23.56123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd79fd99249e977d5!2sS%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1690000000000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                
+                <hr class="divider">
+
+                <!-- Unidade Ca'dore -->
+                <div class="location-content">
+                    <div class="location-info">
+                        <h3>CA'DORE</h3>
+                        <p>Av. José Gulin, 105<br>Bacacheri - Curitiba, PR</p>
+                        <p>🅿️ Estacionamento conveniado<br>♿ Acesso PCD<br>📱 (41)99222-1702</p>
+                    </div>
+                    <div class="map-container">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.3357026976396!2d-49.22812268832033!3d-25.393571131359202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce675015f0f77%3A0xb4c8a16a8516f2c9!2sAv.%20Jos%C3%A9%20Gulin%2C%20105%20-%20Bacacheri%2C%20Curitiba%20-%20PR%2C%2082600-360!5e0!3m2!1spt-BR!2sbr!4v1778620282428!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="rodape">
+    <footer class="footer">
         <div class="container">
-            <p>© 2024 Café Turquesa. Todos os direitos reservados.</p>
+            <p>© 2026 Oh My Gosh!. Todos os direitos reservados.</p>
         </div>
     </footer>
-
 </body>
 </html>
