@@ -141,8 +141,14 @@ body {
     transition: 0.3s;
 }
 
-.btn-primary { background: white; color: var(--turquesa-escuro); }
-.btn-secondary { border: 2px solid white; color: white; }
+.btn-primary { 
+    background: white; 
+    color: var(--turquesa-escuro); 
+}
+.btn-secondary { 
+    border: 2px solid white; 
+    color: white; 
+}
 
 /* Cardápio */
 input[type="radio"] { display: none; }
@@ -182,16 +188,15 @@ input[type="radio"] { display: none; }
     font-weight: 500;
 }
 
-/* Container da Grade de Produtos */
 .grade-produtos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr); /* colocar 4 itens numa fileira*/
     gap: 15px;
     padding: 10px;
     justify-items: center;
     max-width: 1400px;
     margin: 0 auto;
-    width: 95%;
+
 }
 
 .card-produto {
@@ -204,8 +209,6 @@ input[type="radio"] { display: none; }
     flex-direction: column;
     transition: transform 0.3s;
 
-    max-width: 100%; 
-    min-width: 0;   
     padding: 15px;   
 }
 
@@ -226,7 +229,7 @@ input[type="radio"] { display: none; }
 }
 .card-produto p { 
     font-size: 0.95rem; 
-    color: #666; 
+    color: (--cinza); 
     line-height: 1.4; 
     margin-bottom: 15px; 
     flex-grow: 1; 
@@ -245,9 +248,7 @@ input[type="radio"] { display: none; }
 #cat-bom:checked ~ .grade-produtos .bombom,
 #cat-bro:checked ~ .grade-produtos .brownie,
 #cat-tor:checked ~ .grade-produtos .torta,
-#cat-sal:checked ~ .grade-produtos .salgado { 
-    display: flex; 
-}
+#cat-sal:checked ~ .grade-produtos .salgado { display: flex; }
 
 
 #cat-gel:checked ~ .categorias-nav label[for="cat-gel"],/* Estilo do botão da categ. ativa */
@@ -256,12 +257,10 @@ input[type="radio"] { display: none; }
 #cat-bom:checked ~ .categorias-nav label[for="cat-bom"],
 #cat-bro:checked ~ .categorias-nav label[for="cat-bro"],
 #cat-tor:checked ~ .categorias-nav label[for="cat-tor"],
-#cat-sal:checked ~ .categorias-nav label[for="cat-sal"] {
-    background: var(--turquesa);
-    color: #fff;
-}
+#cat-sal:checked ~ .categorias-nav label[for="cat-sal"] { background: var(--turquesa);
+                                                          color: #fff;}
 
-/* Info Section */
+/* Horario */
 .secao-info { 
     padding: 25px 0; 
     background: var(--turquesa); 
@@ -282,8 +281,8 @@ input[type="radio"] { display: none; }
 
 /* Seções Gerais & Galeria */
 .section-title {
-    margin-bottom: 3rem;
-    padding-top: 60px;
+    margin-bottom: 1px;
+    padding-top: 10px;
     letter-spacing: 2px;
 }
 
@@ -292,29 +291,29 @@ input[type="radio"] { display: none; }
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
+
 /* Seção Galeria */
 .gallery-section {
     padding: 100px 0;
-    background-color: #ffffff; /* Fundo limpo */
+    background-color: #ffffff; 
 }
 
 .gallery-section .section-title {
-  text-align: center; 
+    text-align: center; 
     font-size: 2.5rem; 
     color: var(--texto); 
     font-weight: 1000;
     font-family: 'Poppins', sans-serif;
-    font-weight: 750;
-    padding-top: 5%;
+    padding-top: 0;
+    margin-bottom: 1px;
 }
 
-/* Grid Largo e Responsivo */
 .products-grid {
     display: grid;
     /* Cria 3 colunas iguais em telas grandes, 2 em tablets e 1 em celulares */
     grid-template-columns: repeat(3, 1fr); 
     gap: 25px; /* Espaço entre as fotos */
-    max-width: 1300px; /* Define a largura máxima da galeria na tela */
+    max-width: 1300px; /* largura máxima da galeria na tela */
     margin: 0 auto; /* Centraliza a grade na página */
     padding: 0 20px;
 }
@@ -324,7 +323,7 @@ input[type="radio"] { display: none; }
     position: relative;
     height: 400px; /* Altura fixa para manter o padrão visual */
     border-radius: 20px;
-    overflow: hidden; /* Importante para o efeito de zoom não sair da borda */
+    overflow: hidden; /* para o efeito de zoom não sair da borda */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     cursor: pointer;
@@ -389,15 +388,6 @@ input[type="radio"] { display: none; }
 }
 .gallery-item { box-shadow: none; background: transparent; }
 .gallery-item img { width: 100%; border-radius: 15px; }
- 
-:root {
-    --turquesa: #00CED1;
-    --turquesa-escuro: #008B8B;
-    --ifood: #ea1d2c;
-    --pop99: #ffcf00;
-    --texto: #333;
-    --fundo-leve: #ffffff;
-}
 
 .location-section {
     padding: 100px 0;
@@ -405,14 +395,14 @@ input[type="radio"] { display: none; }
 }
 
 .section-title {
- text-align: center; 
+    text-align: center; 
     font-size: 2.5rem; 
     color: var(--texto); 
     font-weight: 1000;
     font-family: 'Poppins', sans-serif;
-    font-weight: 750;
-    margin-bottom: 2.5%;
+    margin-bottom: 1px;
     padding-top: 0;
+
 }
 
 .unidades-wrapper {
