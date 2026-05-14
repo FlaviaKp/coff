@@ -179,7 +179,7 @@ input[type="radio"] { display: none; }
 
 .grade-produtos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* colocar 4 itens numa fileira*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* colocar 4 itens numa fileira*/
     gap: 15px;
     padding: 10px;
     justify-items: center;
