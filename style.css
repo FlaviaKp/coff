@@ -185,7 +185,6 @@ input[type="radio"] { display: none; }
     justify-items: center;
     max-width: 1400px;
     margin: 0 auto;
-    justify-content: center;
 
 }
 
@@ -524,6 +523,10 @@ input[type="radio"] { display: none; }
     .location-info h3 {
         font-size: 2rem;
     }
+
+    .grade-produtos{
+        justify-content: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -555,6 +558,9 @@ input[type="radio"] { display: none; }
         font-size: 11px;
     }
 
+    .grade-produtos{
+        justify-content: center;
+    }
 
 /* cabeçalho */
     .navbar {
@@ -587,4 +593,6 @@ input[type="radio"] { display: none; }
         right: 10px !important; 
         font-size: 10px !important;
     }
+
+
 }
