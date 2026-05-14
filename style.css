@@ -331,12 +331,13 @@ input[type="radio"] { display: none; }
 }
 
 .gallery-section .section-title {
-    text-align: center;
-    font-size: 2.8rem;
-    color: var(--turquesa-escuro);
-    margin-bottom: 3.5rem;
-    font-weight: 800;
-    text-transform: uppercase;
+  text-align: center; 
+    font-size: 2.5rem; 
+    color: var(--texto); 
+    font-weight: 1000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 750;
+    padding-top: 5%;
 }
 
 /* Grid Largo e Responsivo */
@@ -436,13 +437,14 @@ input[type="radio"] { display: none; }
 }
 
 .section-title {
-    text-align: center;
-    font-size: 2.8rem;
-    color: var(--turquesa-escuro);
-    margin-bottom: 4rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: -1px;
+ text-align: center; 
+    font-size: 2.5rem; 
+    color: var(--texto); 
+    font-weight: 1000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 750;
+    margin-bottom: 2.5%;
+    padding-top: 0;
 }
 
 .unidades-wrapper {
@@ -462,6 +464,8 @@ input[type="radio"] { display: none; }
 .location-info {
     flex: 1.5; 
     max-width: 250px;
+    font-weight: 500;
+    font-family:'Poppins', sans-serif;
 }
 
 .location-info h3 {
