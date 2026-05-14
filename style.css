@@ -251,7 +251,7 @@ input[type="radio"] { display: none; }
 #cat-sal:checked ~ .grade-produtos .salgado { display: flex; }
 
 
-#cat-gel:checked ~ .categorias-nav label[for="cat-gel"],/* Estilo do botão da categ. ativa */
+#cat-gel:checked ~ .categorias-nav label[for="cat-gel"],/* estilo do botão da categ. ativa */
 #cat-que:checked ~ .categorias-nav label[for="cat-que"],
 #cat-bol:checked ~ .categorias-nav label[for="cat-bol"],
 #cat-bom:checked ~ .categorias-nav label[for="cat-bom"],
@@ -292,7 +292,6 @@ input[type="radio"] { display: none; }
     gap: 2rem;
 }
 
-/* Seção Galeria */
 .gallery-section {
     padding: 100px 0;
     background-color: #ffffff; 
@@ -321,7 +320,7 @@ input[type="radio"] { display: none; }
 /* Item Individual da Galeria */
 .gallery-item {
     position: relative;
-    height: 400px; /* Altura fixa para manter o padrão visual */
+    height: 400px; 
     border-radius: 20px;
     overflow: hidden; /* para o efeito de zoom não sair da borda */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -329,25 +328,24 @@ input[type="radio"] { display: none; }
     cursor: pointer;
 }
 
-/* Estilo da Imagem dentro do item */
+/* estilo da imagem dentro do item */
 .gallery-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+    object-fit: cover; /* faz a imagem preencher o espaço sem distorcer */
     transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* Efeito de Hover (Ao passar o mouse) */
+/* ao passar o mouse */
 .gallery-item:hover {
-    transform: translateY(-8px); /* Card sobe levemente */
+    transform: translateY(-8px); /* imagem sobe um pouco */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .gallery-item:hover img {
-    transform: scale(1.15); /* Zoom elegante na imagem */
+    transform: scale(1.15); /* zoom na imagem */
 }
 
-/* Overlay (Filtro escuro suave ao passar o mouse) */
 .gallery-item::after {
     content: '';
     position: absolute;
@@ -362,9 +360,7 @@ input[type="radio"] { display: none; }
 }
 
 /* --- Ajustes de Responsividade --- */
-
-/* Tablets (até 992px) */
-@media (max-width: 992px) {
+@media (max-width: 992px) {/* Tablets (até 992px) */
     .products-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas */
         gap: 20px;
@@ -374,8 +370,7 @@ input[type="radio"] { display: none; }
     }
 }
 
-/* Celulares (até 600px) */
-@media (max-width: 600px) {
+@media (max-width: 600px) {/* Celulares (até 600px) */
     .products-grid {
         grid-template-columns: 1fr; /* 1 coluna total */
     }
