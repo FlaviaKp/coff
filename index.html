@@ -36,204 +36,183 @@
         </div>
     </section>
 
-<section id="cardapio" class="secao-cardapio">
+    <section id="cardapio" class="secao-cardapio">
         <div class="container">
             <h1 class="titulo-principal">Nosso Cardápio</h1>
             <div class="divisor"></div>
 
-            <input type="radio" name="p" id="gel-1" checked> <input type="radio" name="p" id="gel-2">
-            <input type="radio" name="p" id="gel-3"> <input type="radio" name="p" id="gel-4">
-            <input type="radio" name="p" id="que-1"> <input type="radio" name="p" id="que-2">
-            <input type="radio" name="p" id="que-3"> <input type="radio" name="p" id="que-4">
-            <input type="radio" name="p" id="bol-1"> <input type="radio" name="p" id="bol-2">
-            <input type="radio" name="p" id="bol-3">
-            <input type="radio" name="p" id="bom-1"> <input type="radio" name="p" id="bom-2">
-            <input type="radio" name="p" id="bro-1"> <input type="radio" name="p" id="bro-2">
-            <input type="radio" name="p" id="bro-3"> <input type="radio" name="p" id="bro-4">
-            <input type="radio" name="p" id="tor-1"> <input type="radio" name="p" id="tor-2">
-            <input type="radio" name="p" id="sal-1"> <input type="radio" name="p" id="sal-2">
-            <input type="radio" name="p" id="sal-3">
+            <input type="radio" name="categoria" id="cat-gel" checked>
+            <input type="radio" name="categoria" id="cat-que">
+            <input type="radio" name="categoria" id="cat-bol">
+            <input type="radio" name="categoria" id="cat-bom">
+            <input type="radio" name="categoria" id="cat-bro">
+            <input type="radio" name="categoria" id="cat-tor">
+            <input type="radio" name="categoria" id="cat-sal">
 
-            <div class="wrapper-conteudo">
-                <div class="secao-imagem">
-                    <div class="setas-navegacao">
-                        <label for="gel-4" class="seta anterior s-gel-1">❮</label><label for="gel-2" class="seta proxima s-gel-1">❯</label>
-                        <label for="gel-1" class="seta anterior s-gel-2">❮</label><label for="gel-3" class="seta proxima s-gel-2">❯</label>
-                        <label for="gel-2" class="seta anterior s-gel-3">❮</label><label for="gel-4" class="seta proxima s-gel-3">❯</label>
-                        <label for="gel-3" class="seta anterior s-gel-4">❮</label><label for="gel-1" class="seta proxima s-gel-4">❯</label>
-                        <label for="que-4" class="seta anterior s-que-1">❮</label><label for="que-2" class="seta proxima s-que-1">❯</label>
-                        <label for="que-1" class="seta anterior s-que-2">❮</label><label for="que-3" class="seta proxima s-que-2">❯</label>
-                        <label for="que-2" class="seta anterior s-que-3">❮</label><label for="que-4" class="seta proxima s-que-3">❯</label>
-                        <label for="que-3" class="seta anterior s-que-4">❮</label><label for="que-1" class="seta proxima s-que-4">❯</label>
-                        <label for="bol-3" class="seta anterior s-bol-1">❮</label><label for="bol-2" class="seta proxima s-bol-1">❯</label>
-                        <label for="bol-1" class="seta anterior s-bol-2">❮</label><label for="bol-3" class="seta proxima s-bol-2">❯</label>
-                        <label for="bol-2" class="seta anterior s-bol-3">❮</label><label for="bol-1" class="seta proxima s-bol-3">❯</label>
-                        <label for="bom-2" class="seta anterior s-bom-1">❮</label><label for="bom-2" class="seta proxima s-bom-1">❯</label>
-                        <label for="bom-1" class="seta anterior s-bom-2">❮</label><label for="bom-1" class="seta proxima s-bom-2">❯</label>
-                        <label for="bro-4" class="seta anterior s-bro-1">❮</label><label for="bro-2" class="seta proxima s-bro-1">❯</label>
-                        <label for="bro-1" class="seta anterior s-bro-2">❮</label><label for="bro-3" class="seta proxima s-bro-2">❯</label>
-                        <label for="bro-2" class="seta anterior s-bro-3">❮</label><label for="bro-4" class="seta proxima s-bro-3">❯</label>
-                        <label for="bro-3" class="seta anterior s-bro-4">❮</label><label for="bro-1" class="seta proxima s-bro-4">❯</label>
-                        <label for="tor-2" class="seta anterior s-tor-1">❮</label><label for="tor-2" class="seta proxima s-tor-1">❯</label>
-                        <label for="tor-1" class="seta anterior s-tor-2">❮</label><label for="tor-1" class="seta proxima s-tor-2">❯</label>
-                        <label for="sal-3" class="seta anterior s-sal-1">❮</label><label for="sal-2" class="seta proxima s-sal-1">❯</label>
-                        <label for="sal-1" class="seta anterior s-sal-2">❮</label><label for="sal-3" class="seta proxima s-sal-2">❯</label>
-                        <label for="sal-2" class="seta anterior s-sal-3">❮</label><label for="sal-1" class="seta proxima s-sal-3">❯</label>
-                    </div>
+            <div class="categorias-nav">
+                <label for="cat-gel" class="etiqueta">Bebidas Geladas </label>
+                <label for="cat-que" class="etiqueta">Bebidas Quentes </label>
+                <label for="cat-bol" class="etiqueta">Bolo no Pote </label>
+                <label for="cat-bom" class="etiqueta">Bombom no Pote </label>
+                <label for="cat-bro" class="etiqueta">Brownies </label>
+                <label for="cat-tor" class="etiqueta">Tortas </label>
+                <label for="cat-sal" class="etiqueta">Salgados </label>
+            </div>
 
-                    <div class="circulo-moldura">
-                        <img src="imagens/cardapio/bebidas geladas/iced_latte.jpg" class="img-produto" id="img-gel-1">
-                        <img src="imagens/cardapio/bebidas geladas/smoothie-m.jpg" class="img-produto" id="img-gel-2">
-                        <img src="imagens/cardapio/bebidas geladas/cappuccino_gelado.png" class="img-produto" id="img-gel-3">
-                        <img src="imagens/cardapio/bebidas geladas/frappes.jpg" class="img-produto" id="img-gel-4">
-                        <img src="imagens/cardapio/bebidas quentes/big_latte.jpg" class="img-produto" id="img-que-1">
-                        <img src="imagens/cardapio/bebidas quentes/cap_italiano.jpg" class="img-produto" id="img-que-2">
-                        <img src="imagens/cardapio/bebidas quentes/cap_especial.jpg" class="img-produto" id="img-que-3">
-                        <img src="imagens/cardapio/bebidas quentes/chocolate_quente.jpg" class="img-produto" id="img-que-4">
-                        <img src="imagens/cardapio/bolo no pote/caramelo.png" class="img-produto" id="img-bol-1">
-                        <img src="imagens/cardapio/bolo no pote/cenoura.png" class="img-produto" id="img-bol-2">
-                        <img src="imagens/cardapio/bolo no pote/dois_amores.png" class="img-produto" id="img-bol-3">
-                        <img src="imagens/cardapio/bombom no pote/2amores_m.jpg" class="img-produto" id="img-bom-1">
-                        <img src="imagens/cardapio/bombom no pote/maracuja_m.jpg" class="img-produto" id="img-bom-2">
-                        <img src="imagens/cardapio/brownies/recheado.png" class="img-produto" id="img-bro-1">
-                        <img src="imagens/cardapio/brownies/ninho.png" class="img-produto" id="img-bro-2">
-                        <img src="imagens/cardapio/brownies/ferreiro.png" class="img-produto" id="img-bro-3">
-                        <img src="imagens/cardapio/brownies/sensacao.png" class="img-produto" id="img-bro-4">
-                        <img src="imagens/cardapio/tortas/limao_m.jpg" class="img-produto" id="img-tor-1">
-                        <img src="imagens/cardapio/tortas/bannoff-m.jpg" class="img-produto" id="img-tor-2">
-                        <img src="imagens/cardapio/salgados/empanada.jpg" class="img-produto" id="img-sal-1">
-                        <img src="imagens/cardapio/salgados/tostex_misto.jpg" class="img-produto" id="img-sal-2">
-                        <img src="imagens/cardapio/salgados/tostex_queijo.jpg" class="img-produto" id="img-sal-3">
-                    </div>
+            <div class="grade-produtos">
+                <div class="card-produto gelada">
+                    <img src="imagens/cardapio/bebidas geladas/iced_latte.jpg">
+                    <h3>Iced Latte</h3>
+                    <p>Um shot de café espresso, leite e gelo (baunilha opcional). Simples e delicioso! (400ml).</p>
+                    <span class="preco-produto"> R$ 17,90 </span>
+                </div>
+                <div class="card-produto gelada">
+                    <img src="imagens/cardapio/bebidas geladas/smoothie-m.jpg">
+                    <h3>Smoothies</h3>
+                    <p>Beeem gelado e saboroso, nosso smoothhie é perfeito para aqueles dias em que Curitiba entra no modo verão (500ml).</p>
+                    <span class="preco-produto"> R$ 24,90 </span>
+                </div>
+                <div class="card-produto gelada">
+                    <img src="imagens/cardapio/bebidas geladas/cappuccino_gelado.png">
+                    <h3>Cappuccino Gelado</h3>
+                    <p>Delicioso blend do nosso cappuccino especial, calda de chocolate meio amargo, leite, cubos de gelo, chantilly e canela em pó... Essa bebida tem o incrível poder de melhorar o seu dia!</p>
+                    <span class="preco-produto"> R$ 24,90 </span>
+                </div>
+                <div class="card-produto gelada">
+                    <img src="imagens/cardapio/bebidas geladas/frappes.jpg">
+                    <h3>Frappes</h3>
+                    <p>Bebida cremosinhha, bem gelada e deliciosa! perfeita para uma pausa no meio do dia. Ele leva café expresso (opcional), leite, chantilly e o ingrediente do sabor escolhido (500ml).</p>
+                    <span class="preco-produto"> R$ 24,90 </span>
                 </div>
 
-                <div class="secao-informacoes">
-                    <div class="categorias-nav">
-                        <label for="gel-1" class="etiqueta b-gel">Bebidas Geladas </label>
-                        <label for="que-1" class="etiqueta b-que">Bebidas Quentes </label>
-                        <label for="bol-1" class="etiqueta b-bol">Bolo no Pote </label>
-                        <label for="bom-1" class="etiqueta b-bom">Bombom no Pote </label>
-                        <label for="bro-1" class="etiqueta b-bro">Brownies </label>
-                        <label for="tor-1" class="etiqueta b-tor">Tortas </label>
-                        <label for="sal-1" class="etiqueta b-sal">Salgados </label>
-                    </div>
 
-                    <div class="texto-produto" id="txt-gel-1">
-                        <h2>Iced Latte</h2>
-                        <p>Um shot de café espresso, leite e gelo (baunilha opcional). Simples e delicioso! (400ml).</p>
-                        <span class="preco-produto"> R$ 17,90 </span>
-                    </div>
-                    <div class="texto-produto" id="txt-gel-2">
-                        <h2>Smoothies</h2>
-                        <p>Beeem gelado e saboroso, nosso smoothhie é perfeito para aqueles dias em que Curitiba entra no modo verão (500ml).</p>
-                        <span class="preco-produto"> R$ 24,90 </span>
-                    </div>
-                    <div class="texto-produto" id="txt-gel-3">
-                        <h2>Cappuccino Gelado</h2>
-                        <p>Delicioso blend do nosso cappuccino especial, calda de chocolate meio amargo, leite, cubos de gelo, chantilly e canela em pó... Essa bebida tem o incrível poder de melhorar o seu dia!</p>
-                        <span class="preco-produto"> R$ 24,90 </span>
-                    </div>
-                    <div class="texto-produto" id="txt-gel-4">
-                        <h2>Frappes</h2>
-                        <p>Bebida cremosinhha, bem gelada e deliciosa! perfeita para uma pausa no meio do dia. Ele leva café expresso (opcional), leite, chantilly e o ingrediente do sabor escolhido (500ml).</p>
-                        <span class="preco-produto"> R$ 24,90 </span>
-                    </div>
+                <div class="card-produto quente">
+                    <img src="imagens/cardapio/bebidas quentes/big_latte.jpg">
+                    <h3>Big Latte</h3>
+                    <p>Uma dose dupla de café espresso (Orfeu) e leite vaporizado cremosinho. 500ml de café com leite para você se esbaldar!.</p>
+                    <span class="preco-produto"> R$ 23,90 </span>
+                </div>
+                <div class="card-produto quente">
+                    <img src="imagens/cardapio/bebidas quentes/cap_italiano.jpg">
+                    <h3>Cappuccino Italiano</h3>
+                    <p>Espresso com leite vaporizado e espuma cremosa, polvilhado com canela (270ml).</p>
+                    <span class="preco-produto"> R$ 12,90 </span>
+                </div>
+                <div class="card-produto quente">
+                    <img src="imagens/cardapio/bebidas quentes/cap_especial.jpg">
+                    <h3>Cappuccino Especial</h3>
+                    <p>Sua composição leva calda de chocolate gourmet meio amargo, uma mistura deliciosa do nosso cappuccino especial, leite vaporizado, uma pitadinha de canela em pó e chantilly em um potinho enviado separadamente (opcional) (270ml).</p>
+                    <span class="preco-produto"> R$ 19,90 </span>
+                </div>
+                <div class="card-produto quente">
+                    <img src="imagens/cardapio/bebidas quentes/chocolate_quente.jpg">
+                    <h3>Chocolate Quente Europeu</h3>
+                    <p>Esse chocolate quente é muito consumido no friozinho europeu. Sua composição leva um blend especial de chocolate em pó, leite vaporizado bem cremoso e chantilly em um potinho enviado separadamente (opcional) (270ml).</p>
+                    <span class="preco-produto"> R$ 24,00 </span>
+                </div>
 
-                    <div class="texto-produto" id="txt-que-1">
-                        <h2>Big Latte</h2>
-                        <p>Uma dose dupla de café espresso (Orfeu) e leite vaporizado cremosinho. 500ml de café com leite para você se esbaldar!.</p>
-                        <span class="preco-produto"> R$ 23,90 </span>
-                    </div>
-                    <div class="texto-produto" id="txt-que-2">
-                        <h2>Cappuccino Italiano</h2>
-                        <p>Espresso com leite vaporizado e espuma cremosa, polvilhado com canela (270ml).</p>
-                        <span class="preco-produto"> R$ 12,90 </span>
-                    </div>
-                    <div class="texto-produto" id="txt-que-3">
-                        <h2>Cappuccino Especial</h2>
-                        <p>Sua composição leva calda de chocolate gourmet meio amargo, uma mistura deliciosa do nosso cappuccino especial, leite vaporizado, uma pitadinha de canela em pó e chantilly em um potinho enviado separadamente (opcional) (270ml).</p>
-                        <span class="preco-produto"> R$ 19,90 </span>
-                    </div>
-                    <div class="texto-produto" id="txt-que-4">
-                        <h2>Chocolate Quente Europeu</h2>
-                        <p>Esse chocolate quente é muito consumido no friozinho europeu. Sua composição leva um blend especial de chocolate em pó, leite vaporizado bem cremoso e chantilly em um potinho enviado separadamente (opcional) (270ml).</p>
-                        <span class="preco-produto"> R$ 24,00 </span>
-                    </div>
 
-                    <div class="texto-produto" id="txt-bol-1">
-                        <h2>Bolo de Pote: Brigadeiro e Caramelo Salgado</h2>
-                        <p>Feito com camadas de bolo de chocolate super macio, brigadeiro cremoso artesanal e um toque surpreendente de caramelo salgado (220ml).</p>
-                        <span class="preco-produto"> R$ 22,00 </span>
-                    </div>
-                    <div class="texto-produto" id="txt-bol-2">
-                        <h2>Bolo de Pote: Cenoura com Brigadeiro</h2>
-                        <p>A combinação perfeita de um bolo de cenoura fofinho com brigadeiro cremoso dentro de um potinho! (200ml).</p>
-                        <span class="preco-produto"> R$ 22,00 </span>
-                    </div>
-                    <div class="texto-produto" id="txt-bol-3">
-                        <h2>Bolo de Pote: Brigadeiro Dois Amores</h2>
-                        <p>Saboreie a felicidade em cada camada com o nosso Bolo de Pote de Dois Amores. É uma explosão de brigadeiros preto e branco em cada colherada (220ml).</p>
-                        <span class="preco-produto"> R$ 22,00 </span>
-                    </div>
+                <div class="card-produto bolo">
+                    <img src="imagens/cardapio/bolo no pote/caramelo.png">
+                    <h3>Bolo de Pote: Brigadeiro e Caramelo Salgado</h3>
+                    <p>Feito com camadas de bolo de chocolate super macio, brigadeiro cremoso artesanal e um toque surpreendente de caramelo salgado (220ml).</p>
+                    <span class="preco-produto"> R$ 22,00 </span>
+                </div>
+                <div class="card-produto bolo">
+                    <img src="imagens/cardapio/bolo no pote/cenoura.png">
+                    <h3>Bolo de Pote: Cenoura com Brigadeiro</h3>
+                    <p>A combinação perfeita de um bolo de cenoura fofinho com brigadeiro cremoso dentro de um potinho! (200ml).</p>
+                    <span class="preco-produto"> R$ 22,00 </span>
+                </div>
+                <div class="card-produto bolo">
+                    <img src="imagens/cardapio/bolo no pote/dois_amores.png">
+                    <h3>Bolo de Pote: Brigadeiro Dois Amores</h3>
+                    <p>Saboreie a felicidade em cada camada com o nosso Bolo de Pote de Dois Amores. É uma explosão de brigadeiros preto e branco em cada colherada (220ml).</p>
+                    <span class="preco-produto"> R$ 22,00 </span>
+                </div>
+                <div class="card-produto bolo">
+                    <img src="imagens/cardapio/bolo no pote/redvelvet.png">
+                    <h3>Bolo de Pote: Red velvet</h3>
+                    <p>Bolo Red Velvet com recheio de cream cheese, brigadeiro branco e geléia artesanal de morango. Fantástico! (220ml).</p>
+                    <span class="preco-produto"> R$ 22,00 </span>
+                </div>
 
-                    <div class="texto-produto" id="txt-bom-1">
-                        <h2>Bombom de Pote: Dois Amores com Uva</h2>
-                        <p>Brigadeiro preto 50% cacau com brigadeiro branco bem cremosinho e uas verdes sem semente! (120ml).</p>
-                        <span class="preco-produto"> R$ 16,90 </span>
-                    </div>
-                    <div class="texto-produto" id="txt-bom-2">
-                        <h2>Bombom de Pote: Mousse de Maracujá com Creme de Alpino</h2>
-                        <p>A combinação perfeita do azedinhho do maracujá com o sabor marcante do chocolate Alpino! (120ml).</p>
-                        <span class="preco-produto"> R$ 16,90 </span>
-                    </div>
 
-                    <div class="texto-produto" id="txt-bro-1">
-                        <h2>Brownie Recheado: Escolha o sabor</h2>
-                        <p>Você pode escolher entre as opções: Meio Amargo, Nutella e Leite Ninho (100g).</p>
-                        <span class="preco-produto"> R$ 15,90 </span>
-                    </div>
-                    <div class="texto-produto" id="txt-bro-2">
-                        <h2>Pizza Brownie Ninho com Nutella</h2>
-                        <p>Perfeito para quem ama doces sofisticados e busca a melhor sobremesa para qualquer ocasião. Descubra o equilíbrio perfeito entre chocolate, leite Ninho e Nutella (100g).</p>
-                        <span class="preco-produto"> R$ 27,90 </span>
-                    </div>
-                    <div class="texto-produto" id="txt-bro-3">
-                        <h2>Pizza Brownie Ferrero</h2>
-                        <p>Perfeita para os apaixonados por sobremesas sofisticadas e irresistíveis. Experimente a Pizza Brownie Ferrero e descubra o equilíbrio perfeito entre chocolate, Nutella e crocância!</p>
-                        <span class="preco-produto"> R$ 28,90 </span>
-                    </div>
-                    <div class="texto-produto" id="txt-bro-4">
-                        <h2>Pizza Brownie Sensação</h2>
-                        <p>Cada mordida é uma experiência única, combinando texturas e sabores em perfeita harmonia. Ideal para os amantes de chocolate e morango, essa sobremesa é perfeita para qualquer ocasião. Experimente a Pizza Brownie Sensação e se apaixone!</p>
-                        <span class="preco-produto"> R$ 26,90 </span>
-                    </div>
+                <div class="card-produto bombom">
+                    <img src="imagens/cardapio/bombom no pote/2amores_m.jpg">
+                    <h3>Bombom de Pote: Dois Amores com Uva</h3>
+                    <p>Brigadeiro preto 50% cacau com brigadeiro branco bem cremosinho e uas verdes sem semente! (120ml).</p>
+                    <span class="preco-produto"> R$ 16,90 </span>
+                </div>
+                <div class="card-produto bombom">
+                    <img src="imagens/cardapio/bombom no pote/maracuja_m.jpg">
+                    <h3>Bombom de Pote: Mousse de Maracujá com Creme de Alpino</h3>
+                    <p>A combinação perfeita do azedinhho do maracujá com o sabor marcante do chocolate Alpino! (120ml).</p>
+                    <span class="preco-produto"> R$ 16,90 </span>
+                </div>
 
-                    <div class="texto-produto" id="txt-tor-1">
-                        <h2>Torta de Limão</h2>
-                        <p>Torta de limão com base crocante, recheio cremoso e cobertura levemente azedinha. Feita artesanalmente.</p>
-                        <span class="preco-produto"> R$ 19,90 </span>
-                    </div>
-                    <div class="texto-produto" id="txt-tor-2">
-                        <h2>Torta Banoffee</h2>
-                        <p>Torta Banoffee com base de biscoito crocante, recheio de doce de leite, rodelas de banana fresca e cobertura de nata. Clássica e irresistível.</p>
-                        <span class="preco-produto"> R$ 19,90 </span>
-                    </div>
+                <div class="card-produto brownie">
+                    <img src="imagens/cardapio/brownies/recheado.png">
+                    <h3>Brownie Recheado: Escolha o sabor</h3>
+                    <p>Você pode escolher entre as opções: Meio Amargo, Nutella e Leite Ninho (100g).</p>
+                    <span class="preco-produto"> R$ 15,90 </span>
+                </div>
+                <div class="card-produto brownie">
+                    <img src="imagens/cardapio/brownies/ninho.png">
+                    <h3>Pizza Brownie Ninho com Nutella</h3>
+                    <p>Perfeito para quem ama doces sofisticados e busca a melhor sobremesa para qualquer ocasião. Descubra o equilíbrio perfeito entre chocolate, leite Ninho e Nutella (100g).</p>
+                    <span class="preco-produto"> R$ 27,90 </span>
+                </div>
+                <div class="card-produto brownie">
+                    <img src="imagens/cardapio/brownies/ferreiro.png">
+                    <h3>Pizza Brownie Ferrero</h3>
+                    <p>Perfeita para os apaixonados por sobremesas sofisticadas e irresistíveis. Experimente a Pizza Brownie Ferrero e descubra o equilíbrio perfeito entre chocolate, Nutella e crocância!</p>
+                    <span class="preco-produto"> R$ 28,90 </span>
+                </div>
+                <div class="card-produto brownie">
+                    <img src="imagens/cardapio/brownies/sensacao.png">
+                    <h3>Pizza Brownie Sensação</h3>
+                    <p>Cada mordida é uma experiência única, combinando texturas e sabores em perfeita harmonia. Ideal para os amantes de chocolate e morango, essa sobremesa é perfeita para qualquer ocasião. Experimente a Pizza Brownie Sensação e se apaixone!</p>
+                    <span class="preco-produto"> R$ 26,90 </span>
+                </div>
 
-                    <div class="texto-produto" id="txt-sal-1">
-                        <h2>Empanada de Calabresa</h2>
-                        <p>Empanada de 130g assada na hora para você e com bastante recheio de calabresa! Deliciosa!</p>
-                        <span class="preco-produto"> R$ 16,90 </span>
-                    </div>
-                    <div class="texto-produto" id="txt-sal-2">
-                        <h2>Tostex Misto</h2>
-                        <p>Feito com pão crocante, queijo derretido e presunto suculento, é o lanche perfeito para qualquer momento do Dia. Delicioso e irresistível!</p>
-                        <span class="preco-produto"> R$ 16,90 </span>
-                    </div>
-                    <div class="texto-produto" id="txt-sal-3">
-                        <h2>Tostex Queijo Quente</h2>
-                        <p>Com pão crocante e queijos cheddar e mussarela derretidos, cada mordida é pura cremosidade e sabor. Perfeito para qualquer hora do Dia.</p>
-                        <span class="preco-produto"> R$ 16,90 </span>
-                    </div>
+                <div class="card-produto torta">
+                    <img src="imagens/cardapio/tortas/limao_m.jpg">
+                    <h3>Torta de Limão</h3>
+                    <p>Torta de limão com base crocante, recheio cremoso e cobertura levemente azedinha. Feita artesanalmente.</p>
+                    <span class="preco-produto"> R$ 19,90 </span>
+                </div>
+                <div class="card-produto torta">
+                    <img src="imagens/cardapio/tortas/bannoff-m.jpg">
+                    <h3>Torta Banoffee</h3>
+                    <p>Torta Banoffee com base de biscoito crocante, recheio de doce de leite, rodelas de banana fresca e cobertura de nata. Clássica e irresistível.</p>
+                    <span class="preco-produto"> R$ 19,90 </span>
+                </div>
+                    <div class="card-produto torta">
+                    <img src="imagens/cardapio/tortas/amendoim.png">
+                    <h3>Torta Chocolate com Amendoim</h3>
+                    <p>Uma generosa fatia de torta de chocolate meio amargo coberta com amendoim crocante. Muuito boa!</p>
+                    <span class="preco-produto"> R$ 19,90 </span>
+                </div>
+
+                <div class="card-produto salgado">
+                    <img src="imagens/cardapio/salgados/empanada.jpg">
+                    <h3>Empanada de Calabresa</h3>
+                    <p>Empanada de 130g assada na hora para você e com bastante recheio de calabresa! Deliciosa!</p>
+                    <span class="preco-produto"> R$ 16,90 </span>
+                </div>
+                <div class="card-produto salgado">
+                    <img src="imagens/cardapio/salgados/tostex_misto.jpg">
+                    <h3>Tostex Misto</h3>
+                    <p>Feito com pão crocante, queijo derretido e presunto suculento, é o lanche perfeito para qualquer momento do Dia. Delicioso e irresistível!</p>
+                    <span class="preco-produto"> R$ 16,90 </span>
+                </div>
+                <div class="card-produto salgado">
+                    <img src="imagens/cardapio/salgados/tostex_queijo.jpg">
+                    <h3>Tostex Queijo Quente</h3>
+                    <p>Com pão crocante e queijos cheddar e mussarela derretidos, cada mordida é pura cremosidade e sabor. Perfeito para qualquer hora do Dia.</p>
+                    <span class="preco-produto"> R$ 16,90 </span>
+                </div>
                 </div>
             </div>
         </div>

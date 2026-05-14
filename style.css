@@ -144,7 +144,7 @@ body {
 .btn-primary { background: white; color: var(--turquesa-escuro); }
 .btn-secondary { border: 2px solid white; color: white; }
 
-/* Menu Dinâmico / Cardápio */
+/* Cardápio */
 input[type="radio"] { display: none; }
 
 .secao-cardapio { padding: 120px 0 80px; }
@@ -164,131 +164,99 @@ input[type="radio"] { display: none; }
     margin: 10px auto 40px; 
 }
 
-.wrapper-conteudo {
-    display: flex;
-    align-items: center;
-    gap: 120px;
-    min-height: 450px;
-    justify-content: center;
-}
-
-.secao-imagem { position: relative; }
-
-.circulo-moldura {
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    border: 5px solid var(--turquesa);
-    overflow: hidden;
-    position: relative;
-}
-
-
-.img-produto {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    position: absolute;
-    opacity: 0;
-    transition: 0.4s ease-in-out;
-}
-
-.seta {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: #fff;
-    border-radius: 50%;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 5;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    color: var(--turquesa);
-    font-weight: bold;
-}
-
-.anterior { left: -60px; }
-.proxima { right: -60px; }
-
 .categorias-nav { 
     display: flex;
-    justify-content: flex-start;
+    justify-content: center; 
     flex-wrap: wrap; 
-    gap: 8px; 
-    margin-bottom: 30px;
+    gap: 12px; 
+    margin-bottom: 50px;
 }
 
 .etiqueta {
-    padding: 8px 15px;
+    padding: 10px 20px;
     border: 1px solid var(--turquesa);
-    border-radius: 20px;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
     transition: 0.3s;
+    font-weight: 500;
 }
 
-.texto-produto { display: none !important; }
+/* Container da Grade de Produtos */
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+    padding: 10px;
+    justify-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 95%;
+}
 
-.preco-produto { 
-    display: block;
-    font-size: 2.2rem; 
+.card-produto {
+    background: #fff;
+    border: 1px solid #eee;
+
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: none; /* Escondido por padrão */
+    flex-direction: column;
+    transition: transform 0.3s;
+
+    max-width: 100%; 
+    min-width: 0;   
+    padding: 15px;   
+}
+
+.card-produto:hover { transform: translateY(-5px); }
+
+.card-produto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card-produto h2 { 
+    font-size: 1.4rem; 
+    margin-bottom: 10px; 
+    color: var(--texto); 
+}
+.card-produto p { 
+    font-size: 0.95rem; 
+    color: #666; 
+    line-height: 1.4; 
+    margin-bottom: 15px; 
+    flex-grow: 1; 
+}
+
+.card-produto .preco-produto { 
+    font-size: 1.8rem; 
     font-weight: bold; 
     color: var(--turquesa); 
-    margin-top: 20px; 
+    margin-top: auto; 
 }
 
-/* Lógica de Troca do Cardápio */
-#gel-1:checked ~ .wrapper-conteudo #img-gel-1, #gel-1:checked ~ .wrapper-conteudo #txt-gel-1,
-#gel-2:checked ~ .wrapper-conteudo #img-gel-2, #gel-2:checked ~ .wrapper-conteudo #txt-gel-2,
-#gel-3:checked ~ .wrapper-conteudo #img-gel-3, #gel-3:checked ~ .wrapper-conteudo #txt-gel-3,
-#gel-4:checked ~ .wrapper-conteudo #img-gel-4, #gel-4:checked ~ .wrapper-conteudo #txt-gel-4,
-#que-1:checked ~ .wrapper-conteudo #img-que-1, #que-1:checked ~ .wrapper-conteudo #txt-que-1,
-#que-2:checked ~ .wrapper-conteudo #img-que-2, #que-2:checked ~ .wrapper-conteudo #txt-que-2,
-#que-3:checked ~ .wrapper-conteudo #img-que-3, #que-3:checked ~ .wrapper-conteudo #txt-que-3,
-#que-4:checked ~ .wrapper-conteudo #img-que-4, #que-4:checked ~ .wrapper-conteudo #txt-que-4,
-#bol-1:checked ~ .wrapper-conteudo #img-bol-1, #bol-1:checked ~ .wrapper-conteudo #txt-bol-1,
-#bol-2:checked ~ .wrapper-conteudo #img-bol-2, #bol-2:checked ~ .wrapper-conteudo #txt-bol-2,
-#bol-3:checked ~ .wrapper-conteudo #img-bol-3, #bol-3:checked ~ .wrapper-conteudo #txt-bol-3,
-#bom-1:checked ~ .wrapper-conteudo #img-bom-1, #bom-1:checked ~ .wrapper-conteudo #txt-bom-1,
-#bom-2:checked ~ .wrapper-conteudo #img-bom-2, #bom-2:checked ~ .wrapper-conteudo #txt-bom-2,
-#bro-1:checked ~ .wrapper-conteudo #img-bro-1, #bro-1:checked ~ .wrapper-conteudo #txt-bro-1,
-#bro-2:checked ~ .wrapper-conteudo #img-bro-2, #bro-2:checked ~ .wrapper-conteudo #txt-bro-2,
-#bro-3:checked ~ .wrapper-conteudo #img-bro-3, #bro-3:checked ~ .wrapper-conteudo #txt-bro-3,
-#bro-4:checked ~ .wrapper-conteudo #img-bro-4, #bro-4:checked ~ .wrapper-conteudo #txt-bro-4,
-#tor-1:checked ~ .wrapper-conteudo #img-tor-1, #tor-1:checked ~ .wrapper-conteudo #txt-tor-1,
-#tor-2:checked ~ .wrapper-conteudo #img-tor-2, #tor-2:checked ~ .wrapper-conteudo #txt-tor-2,
-#sal-1:checked ~ .wrapper-conteudo #img-sal-1, #sal-1:checked ~ .wrapper-conteudo #txt-sal-1,
-#sal-2:checked ~ .wrapper-conteudo #img-sal-2, #sal-2:checked ~ .wrapper-conteudo #txt-sal-2,
-#sal-3:checked ~ .wrapper-conteudo #img-sal-3, #sal-3:checked ~ .wrapper-conteudo #txt-sal-3 { 
-    display: block !important; opacity: 1; 
-}
-
-/* Setas Ativas */
-#gel-1:checked ~ .wrapper-conteudo .s-gel-1, #gel-2:checked ~ .wrapper-conteudo .s-gel-2,
-#gel-3:checked ~ .wrapper-conteudo .s-gel-3, #gel-4:checked ~ .wrapper-conteudo .s-gel-4,
-#que-1:checked ~ .wrapper-conteudo .s-que-1, #que-2:checked ~ .wrapper-conteudo .s-que-2,
-#que-3:checked ~ .wrapper-conteudo .s-que-3, #que-4:checked ~ .wrapper-conteudo .s-que-4,
-#bol-1:checked ~ .wrapper-conteudo .s-bol-1, #bol-2:checked ~ .wrapper-conteudo .s-bol-2,
-#bol-3:checked ~ .wrapper-conteudo .s-bol-3, #bom-1:checked ~ .wrapper-conteudo .s-bom-1,
-#bom-2:checked ~ .wrapper-conteudo .s-bom-2, #bro-1:checked ~ .wrapper-conteudo .s-bro-1,
-#bro-2:checked ~ .wrapper-conteudo .s-bro-2, #bro-3:checked ~ .wrapper-conteudo .s-bro-3,
-#bro-4:checked ~ .wrapper-conteudo .s-bro-4, #tor-1:checked ~ .wrapper-conteudo .s-tor-1,
-#tor-2:checked ~ .wrapper-conteudo .s-tor-2, #sal-1:checked ~ .wrapper-conteudo .s-sal-1,
-#sal-2:checked ~ .wrapper-conteudo .s-sal-2, #sal-3:checked ~ .wrapper-conteudo .s-sal-3 { 
+#cat-gel:checked ~ .grade-produtos .gelada, /*  produtos da categ.selecionada */
+#cat-que:checked ~ .grade-produtos .quente,
+#cat-bol:checked ~ .grade-produtos .bolo,
+#cat-bom:checked ~ .grade-produtos .bombom,
+#cat-bro:checked ~ .grade-produtos .brownie,
+#cat-tor:checked ~ .grade-produtos .torta,
+#cat-sal:checked ~ .grade-produtos .salgado { 
     display: flex; 
 }
 
-/* Cores das Etiquetas Ativas */
-[id^="gel-"]:checked ~ .wrapper-conteudo .b-gel,
-[id^="que-"]:checked ~ .wrapper-conteudo .b-que,
-[id^="bol-"]:checked ~ .wrapper-conteudo .b-bol,
-[id^="bom-"]:checked ~ .wrapper-conteudo .b-bom,
-[id^="bro-"]:checked ~ .wrapper-conteudo .b-bro,
-[id^="tor-"]:checked ~ .wrapper-conteudo .b-tor,
-[id^="sal-"]:checked ~ .wrapper-conteudo .b-sal {
+
+#cat-gel:checked ~ .categorias-nav label[for="cat-gel"],/* Estilo do botão da categ. ativa */
+#cat-que:checked ~ .categorias-nav label[for="cat-que"],
+#cat-bol:checked ~ .categorias-nav label[for="cat-bol"],
+#cat-bom:checked ~ .categorias-nav label[for="cat-bom"],
+#cat-bro:checked ~ .categorias-nav label[for="cat-bro"],
+#cat-tor:checked ~ .categorias-nav label[for="cat-tor"],
+#cat-sal:checked ~ .categorias-nav label[for="cat-sal"] {
     background: var(--turquesa);
     color: #fff;
 }
