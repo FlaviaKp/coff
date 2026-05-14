@@ -25,6 +25,11 @@ body {
     letter-spacing: -0.4px; 
 }
 
+.icone img{
+    width: 50px;
+    margin-left: 0px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
